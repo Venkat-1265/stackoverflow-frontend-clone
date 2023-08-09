@@ -30,6 +30,7 @@ const Navbar = ({ handleSlideIn }) => {
       }
     }
     dispatch(setCurrentUser(JSON.parse(localStorage.getItem("Profile"))));
+    //eslint-disable-next-line
   }, [User?.token, dispatch]);
 
   return (

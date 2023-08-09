@@ -24,6 +24,7 @@ const UserProfile = ({ slideIn, handleSlideIn }) => {
     if (loggedInUser._id === id) {
       getLoginInfo(id).then(loginHistory => setLoginHistory(loginHistory.data.loginInfo)).catch(err => console.error(err));
     }
+    // eslint-disable-next-line
   }, [id])
   return (
     <div className="home-container-1">
